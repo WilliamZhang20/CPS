@@ -90,7 +90,7 @@ problem_list = solved_problems(DMOJ_USERNAME, session)
 for i, problem_code in enumerate(problem_list):
 
     print(
-        f'creating file {problem_code} [{i + 1}/{len(problem_list)}]', end='\n', flush=True)
+        f'Creating files... [{i + 1}/{len(problem_list)}]', end='\r', flush=True)
 
     submission_id = best_submission(DMOJ_USERNAME, problem_code, session)
     source_code = process_submission(submission_id, session)
