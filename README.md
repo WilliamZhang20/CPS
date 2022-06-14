@@ -4,7 +4,7 @@ This is a web scraper I made for downloading DMOJ problem solutions. DMOJ is a p
 
 Here's my [DMOJ profile](https://dmoj.ca/user/JY900)
 
-This project is my first written in python, and utilizes the [Requests](https://pypi.org/project/requests/) library to make HTTTP requests and persist user login. It assumes that all of a users solutions **are written in C++**, support for other languages will be implemented at a later date.
+This project is my first written in python, and utilizes the [Requests](https://pypi.org/project/requests/) library to make HTTP requests and persist user login. It assumes that all of a users solutions **are written in C++**, support for other languages will be implemented at a later date.
 
 ## Getting Started
 
@@ -36,7 +36,7 @@ To run the program, simply do
 Download times for each solution will vary. This is because the scraper looks for your best solution within the solution ranking pages of each problem.
 
 For a low point problem such as [CCC '17 J1 - Quadrant Selection
-](https://dmoj.ca/problem/ccc17j1), there will be thousands of solutions spread across multiple pages in the [ranking tab](https://dmoj.ca/problem/ccc17j1/rank/). Scraping and processing my solution for this problem (placed on the 23rd page) takes around one minute to complete.
+](https://dmoj.ca/problem/ccc17j1), there will be thousands of solutions spanning across multiple pages in the [ranking tab](https://dmoj.ca/problem/ccc17j1/rank/). Scraping and processing my solution for this problem (placed on the 23rd page) takes around one minute to complete.
 
 In contrast, high point problems like [COCI '14 Contest 1 #6 Kamp](https://dmoj.ca/problem/coci14c1p6) have a relatively minimal number of solutions, so one's solution will have a higher chance of being placed on an earlier ranking page. Scraping and processing my solution for this problem (placed 3rd overall) takes around one second.
 
