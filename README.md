@@ -2,9 +2,9 @@
 
 This is a web scraper I made for downloading DMOJ problem solutions. DMOJ is a platform for training in competitive programming, similar to Codeforces and Leetcode.
 
-This project is my first written in python, and utilizes the [Requests](https://pypi.org/project/requests/) library to make HTTTP requests and persist user login.
-
 Here's my [DMOJ profile](https://dmoj.ca/user/JY900)
+
+This project is my first written in python, and utilizes the [Requests](https://pypi.org/project/requests/) library to make HTTTP requests and persist user login. It assumes that all of a users solutions **are written in C++**, support for other languages will be implemented at a later date.
 
 ## Getting Started
 
