@@ -38,6 +38,6 @@ Download times for each solution will vary. This is because the scraper looks fo
 For a low point problem such as [CCC '17 J1 - Quadrant Selection
 ](https://dmoj.ca/problem/ccc17j1), there will be thousands of solutions spanning across multiple pages in the [ranking tab](https://dmoj.ca/problem/ccc17j1/rank/). Scraping and processing my solution for this problem (placed on the 23rd page) takes around one minute to complete.
 
-In contrast, high point problems like [COCI '14 Contest 1 #6 Kamp](https://dmoj.ca/problem/coci14c1p6) have a relatively minimal number of solutions, so one's solution will have a higher chance of being placed on an earlier ranking page. Scraping and processing my solution for this problem (placed 3rd overall) takes around one second.
+In contrast, high point problems such as [COCI '14 Contest 1 #6 Kamp](https://dmoj.ca/problem/coci14c1p6) have a relatively small number of people submitting to them, so one's solution will have a higher chance of being placed on an earlier ranking page. Scraping and processing my solution for this problem (placed 3rd overall) takes around one second.
 
 Therefore, the time taken to download one's problem solution generally depends on the ranking placement of said solution, and the number of people who have solved the problem.
