@@ -27,7 +27,7 @@ For example
 
 ## Usage
 
-To run the program, simply do
+To run the program, simply execute
 
     python main.py
 
