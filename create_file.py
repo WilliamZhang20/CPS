@@ -17,6 +17,6 @@ def create_file(problem_code, source_code, prob_info, language, directory):
         ext = '.cpp'
     name = prob_info[0] + ext
     print('file: {}'.format(name))
-    #f = open(f'{directory}\{prob_info[1]}\{name}', 'w+', encoding='utf-8')
-    #f.write(source_code)
-    #f.close()
+    f = open(f'{directory}\{prob_info[1]}\{name}', 'w+', encoding='utf-8')
+    f.write(source_code)
+    f.close()
