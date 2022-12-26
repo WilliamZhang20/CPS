@@ -27,8 +27,9 @@ for i, problem_code in enumerate(problem_list):
     print(
         f'Creating files... [{i + 1}/{len(problem_list)}]', end='\r', flush=True)
 
-    submission_id = best_submission(DMOJ_USERNAME, problem_code, session)
-    source_code = process_submission(submission_id, session)
-    create_file(problem_code, source_code, TARGET_DIRECTORY)
+    submission_info = get_submission(DMOJ_USERNAME, problem_code, session) # id, and lang
+    source_code = process_submission(submission_info[0], session)
+    problem_info = find_problem_info(problem_code, session) # full name, prob category
+    create_file(problem_code, source_code, problem_info, submission_info[1], TARGET_DIRECTORY)
 
     time.sleep(1)
