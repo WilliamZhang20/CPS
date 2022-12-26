@@ -5,13 +5,13 @@ def create_file(problem_code, source_code, prob_info, language, directory):
         print('Created directory {}.'.format(prob_info[1]))
 
     # finding language extension
-    if(language.len()>=3 and language[0:3]=='CPP'):
+    if(len(language)>=3 and language[0:3]=='CPP'):
         ext = '.cpp'
     elif(language=='C'):
         ext = '.c'
-    elif(language.len()>3 and language[0:4]=='JAVA'):
+    elif(len(language)>3 and language[0:4]=='JAVA'):
         ext = '.java'
-    elif(language.len()>=2 and language[0:2]=='PY'):
+    elif(len(language)>=2 and language[0:2]=='PY'):
         ext = '.py'
     else:
         ext = '.cpp'
