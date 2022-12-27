@@ -7,7 +7,7 @@ This is a web scraper I made for downloading DMOJ problem solutions. DMOJ is a p
 Here's my [DMOJ profile](https://dmoj.ca/user/JY900)
 
 This project is my first written in python, and utilizes the [Requests](https://pypi.org/project/requests/) library to make HTTP requests and persist user login.
-It will only process user solutions in C, C++, Python, or Java.
+It will only process user solutions in C, C++, Python, Java, or Text.
 
 ## Getting Started
 
@@ -36,6 +36,7 @@ To run the program, simply execute
 
 ## Further Notes
 
-Download times for each solution will now be virtually constant, as now the scraper will only check 1 page with all of the user's correct submissions to that problem. 
+Download times for each solution will now be virtually constant, as the scraper will only check 1 page with all of the user's correct submissions to that problem. 
 Only the most recent one will be selected for download. 
-However, the DMOJ website has a rate limit of 90 requests per minute, so a 1 second break will be taken between processing each problem. 
+However, the program also checks a text file to see if the problem's solution has already been downloaded.
+The more problems that the user has solved, the longer it will take for the later downloads. 
