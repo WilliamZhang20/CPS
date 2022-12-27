@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 from create_file import create_file
 from login import login
 from problem_codes import solved_problems
-from submission_processing import best_submission
+from submission_processing import get_submission
 from submission_processing import process_submission
+from submission_processing import find_problem_info
 
 
 # create DMOJ_USERNAME and DMOJ_PASSWORD environment variables as defined in .env
@@ -24,8 +25,7 @@ problem_list = solved_problems(DMOJ_USERNAME, session)
 
 for i, problem_code in enumerate(problem_list):
 
-    print(
-        f'Creating files... [{i + 1}/{len(problem_list)}]', end='\r', flush=True)
+    print('Creating files... [{}/{}]'.format(i+1, len(problem_list)), end='\r', flush=True)
 
     submission_info = get_submission(DMOJ_USERNAME, problem_code, session) # id, and lang
     source_code = process_submission(submission_info[0], session)
